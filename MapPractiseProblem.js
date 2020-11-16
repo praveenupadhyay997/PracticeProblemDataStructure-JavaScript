@@ -75,16 +75,16 @@ var groupedResults = new Map();
 for(var i = 1; i<= 12; i++)
 {
     /// Generating a birthDate As MM-YYYY
-    var birthDateAsDDYYYY = i+"-"+1992;
+    var birthDateAsMMYYYY = i+"-"+1992;
     /// Array to store person number for same birthDate As MM-YYYY
     var groupRecordOfPersonOfSameBirthday = new Array();
     for(var j = 1; j<= 50; j++)
     {
-        if(personToBirthMonth.get(j) == birthDateAsDDYYYY)
+        if(personToBirthMonth.get(j) == birthDateAsMMYYYY)
         groupRecordOfPersonOfSameBirthday.push(j);
     }
     /// Storing in the map
-    groupedResults.set(birthDateAsDDYYYY, groupRecordOfPersonOfSameBirthday);
+    groupedResults.set(birthDateAsMMYYYY, groupRecordOfPersonOfSameBirthday);
 }
 /// Printing the result
 console.log("Grouped result for birthDate As MM-YYYY and person number -->");
